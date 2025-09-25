@@ -1,10 +1,7 @@
-import React, { useState } from "react";
-import { ArrowUpRight } from "lucide-react";
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
+import React, { useRef } from "react";
+import { motion, useInView } from "framer-motion";
 
-const AtlasSection2 = ({ section2Transform }) => {
+const AtlasSection2 = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.3 });
 
@@ -16,9 +13,9 @@ const AtlasSection2 = ({ section2Transform }) => {
       transition: {
         duration: 0.8,
         ease: "easeOut",
-        staggerChildren: 0.2
-      }
-    }
+        staggerChildren: 0.2,
+      },
+    },
   };
 
   const itemVariants = {
@@ -26,8 +23,8 @@ const AtlasSection2 = ({ section2Transform }) => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
 
   const tabVariants = {
@@ -35,10 +32,9 @@ const AtlasSection2 = ({ section2Transform }) => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
-    }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
   };
-  const [activeTab, setActiveTab] = useState("discover");
 
   const tabs = [
     {
@@ -88,96 +84,51 @@ const AtlasSection2 = ({ section2Transform }) => {
   ];
 
   const renderHeadingWithHighlight = (heading, highlightWord) => {
-    if (!highlightWord) {
-      return heading;
-    }
+    if (!highlightWord) return heading;
 
     const regex = new RegExp(`\\b(${highlightWord})\\b`, "gi");
     const parts = heading.split(regex);
 
-    return parts.map((part, index) => {
-      if (part.toLowerCase() === highlightWord.toLowerCase()) {
-        return (
-          <span key={index} className="text-cyan-500">
-            {part}
-          </span>
-        );
-      }
-      return part;
-    });
+    return parts.map((part, index) =>
+      part.toLowerCase() === highlightWord.toLowerCase() ? (
+        <span key={index} className="text-cyan-500">
+          {part}
+        </span>
+      ) : (
+        part
+      )
+    );
   };
 
-  const activeTabData = tabs.find((tab) => tab.id === activeTab);
-
   return (
-    <div
-      className="absolute inset-0 w-full h-full bg-transparent flex items-end justify-center z-50 overflow-hidden"
-      style={{
-        transform: `translateY(${100 - section2Transform}%)`,
-      }}
-    >
-      <div className="flex w-full h-[88vh] bg-gray-100">
-        <div className=" md:w-80 lg:w-[36%] bg-gradient-to-b from-cyan-800 to-cyan-900 flex flex-col">
-          {tabs.map((tab, index) => (
-            <div
-              key={tab.id}
-              className={`flex-1 relative cursor-pointer transition-all duration-300 ease-in-out ${
-                activeTab === tab.id
-                  ? "bg-cyan-600 shadow-lg"
-                  : "hover:bg-cyan-600/70"
-              }`}
-              onMouseEnter={() => setActiveTab(tab.id)}
-            >
-              <div className="h-full flex items-center justify-between px-8 relative">
-                <div className="text-white">
-                  <h3 className="text-lg md:text-2xl font-light tracking-wide">
-                    {tab.title}
-                  </h3>
-                </div>
-
-                <ArrowUpRight
-                  className={`text-white w-9 md:w-16 h-9 md:h-16 transition-transform duration-300 ease-in-out font-thin ${
-                    activeTab === tab.id ? "rotate-45" : "rotate-0"
-                  }`}
-                  strokeWidth={0.6}
-                />
-              </div>
-
-              {activeTab === tab.id && (
-                <div className="absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-full">
-                  <div className="w-0 h-0 border-l-[20px] border-l-teal-600 border-t-[15px] border-t-transparent border-b-[15px] border-b-transparent"></div>
-                </div>
-              )}
-
-              {index < tabs.length - 1 && (
-                <div className="absolute bottom-0 left-8 right-8 h-px bg-teal-500/30"></div>
-              )}
-            </div>
-          ))}
-        </div>
-
-        <div className="flex-1 lg:w-[64%] relative bg-gray-50 flex flex-col">
-          <div className="flex-1 flex items-start justify-start px-16 py-12">
-            <div className="max-w-3xl">
-              <h1 className="text-2xl md:text-3xl lg:text-4xl font-[350] text-gray-900 leading-tight">
-                {renderHeadingWithHighlight(
-                  activeTabData.heading,
-                  activeTabData.highlightWord
-                )}
-              </h1>
-            </div>
-          </div>
-
-          <div className="h-[350px] lg:h-[430px] w-full">
+    <section ref={ref} className="w-full flex flex-col space-y-16 py-12 px-8 md:px-16">
+      {tabs.map((tab) => (
+        <div
+          key={tab.id}
+          className="bg-gray-50 rounded-lg shadow-md overflow-hidden"
+          variants={containerVariants}
+          initial="hidden"
+          animate={isInView ? "visible" : "hidden"}
+        >
+          < div className="p-8" variants={itemVariants}>
+            <h2 className="text-3xl font-semibold text-gray-900 mb-4">
+              {renderHeadingWithHighlight(tab.heading, tab.highlightWord)}
+            </h2>
+            <p className="text-gray-700">{tab.description}</p>
+          </ div>
+          < div
+            className="h-[350px] lg:h-[430px] w-full"
+            variants={tabVariants}
+          >
             <img
-              src={activeTabData.image}
-              alt={activeTabData.title}
+              src={tab.image}
+              alt={tab.title}
               className="w-full h-full object-cover transition-all duration-500 ease-in-out"
             />
-          </div>
-        </div>
-      </div>
-    </div>
+          </ div>
+        </ div>
+      ))}
+    </section>
   );
 };
 

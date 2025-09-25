@@ -59,7 +59,7 @@ export default function InvestmentFAQ() {
       initial="hidden"
       animate={isInView ? "visible" : "hidden"}
       variants={containerVariants}
-      className="mx-[20px] xl:mx-20 bg-white">
+      className="mx-[20px] xl:mx-20 bg-white mt-40">
       <motion.h1 
         variants={itemVariants}
         className='font-[500] text-2xl lg:text-4xl mb-6 lg:mb-10'>

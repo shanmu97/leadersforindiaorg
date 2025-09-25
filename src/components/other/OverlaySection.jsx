@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AtlasSection1 from "../ui/AtlasSection1";
 import AtlasSection2 from "../ui/AtlasSection2";
+import InvestmentFAQ from "../HomePageSections/InvestmentFAQ";
 
 const OverlappingScrollSections = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -31,11 +32,12 @@ const OverlappingScrollSections = () => {
     <div
       ref={setSectionRef}
       className="relative w-full"
-      style={{ height: "150vh" }} // Container for the scroll effect
+      style={{ height: "180vh" }} // Container for the scroll effect
     >
-      <AtlasSection1>
-        <AtlasSection2 section2Transform={section2Transform} />
-      </AtlasSection1>
+      <AtlasSection1/>
+      <AtlasSection2 />
+      <InvestmentFAQ />
+
     </div>
   );
 };
