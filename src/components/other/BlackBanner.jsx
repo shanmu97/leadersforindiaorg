@@ -8,7 +8,6 @@ export default function BlackBanner() {
     <div style={{ backgroundColor: "#1b1a1b" }}>
       {/* First Section - Get to know the team */}
 
-
       {/* Second Section - Commercial office space */}
       <section className="bg-[#f9f7ef] relative">
         <div className="container mx-auto px-4">
@@ -25,9 +24,11 @@ export default function BlackBanner() {
                   <div className="text-black text-lg leading-relaxed">
                     <p>
                       <span className="font-normal">
-                        At LIO, we’re more than a network — we’re a trusted community of investors, 
-                        founders, and operators. Together, we’ve evaluated hundreds of opportunities 
-                        and deployed capital into some of India’s fastest-growing startups.
+                        At LIO, we’re more than a network — we’re a trusted
+                        community of investors, founders, and operators.
+                        Together, we’ve evaluated hundreds of opportunities and
+                        deployed capital into some of India’s fastest-growing
+                        startups.
                       </span>
                     </p>
                   </div>
@@ -47,15 +48,15 @@ export default function BlackBanner() {
                 <div className="lg:min-w-[500px] w-full flex flex-col justify-center gap-8 lg:gap-12">
                   {/* Stat 1 */}
                   <div className="flex flex-col">
-                    <div className="flex justify-between items-baseline text-black">
+                    <div className="flex justify-between items-baseline text-black gap-8">
                       <h2
                         className="text-6xl lg:text-7xl font-bold"
                         style={{ color: "#ede04c" }}
                       >
-                        300<span className="text-5xl lg:text-6xl">+</span>
+                        25000<span className="text-5xl lg:text-6xl">+</span>
                       </h2>
                       <p className="text-lg lg:text-xl font-normal">
-                        tenant buildouts
+                        Crores combined net worth
                       </p>
                     </div>
                     <div className="w-full h-px bg-gray-600 mt-4"></div>
@@ -68,10 +69,10 @@ export default function BlackBanner() {
                         className="text-6xl lg:text-7xl font-bold"
                         style={{ color: "#ede04c" }}
                       >
-                        2<span className="text-5xl lg:text-6xl">M+</span>
+                        <span className="text-5xl lg:text-6xl">₹51.38 Cr</span>
                       </h2>
                       <p className="text-lg lg:text-xl font-normal">
-                        square feet under management
+                        Capital Deployed
                       </p>
                     </div>
                     <div className="w-full h-px bg-gray-600 mt-4"></div>
@@ -84,11 +85,11 @@ export default function BlackBanner() {
                         className="text-6xl lg:text-7xl font-bold"
                         style={{ color: "#ede04c" }}
                       >
-                        90
-                        <span className="text-5xl lg:text-6xl">&nbsp;day</span>
+                        25
+                        
                       </h2>
                       <p className="text-lg lg:text-xl font-normal">
-                        buildout turnaround
+                        Business Funded
                       </p>
                     </div>
                     <div className="w-full h-px bg-gray-600 mt-4"></div>
@@ -101,11 +102,11 @@ export default function BlackBanner() {
                         className="text-6xl lg:text-7xl font-bold"
                         style={{ color: "#ede04c" }}
                       >
-                        Stat 4
-                        <span className="text-5xl lg:text-6xl">&nbsp;day</span>
+                        850
+                        <span className="text-5xl lg:text-6xl">+</span>
                       </h2>
                       <p className="text-lg lg:text-xl font-normal">
-                        buildout turnaround
+                        Opportunities Evaluated
                       </p>
                     </div>
                     <div className="w-full h-px bg-gray-600 mt-4"></div>
@@ -126,7 +127,7 @@ export default function BlackBanner() {
         </div>
       </section>
 
-            <section className="bg-[#f9f7ef] relative max-xl:pb-52 mb-[-1px]">
+      <section className="bg-[#f9f7ef] relative max-xl:pb-52 mb-[-1px]">
         <div className="container mx-auto px-4">
           <div className="pt-20 pb-20">
             <div className="relative flex flex-col items-center justify-center overflow-hidden text-center h-full lg:p-16 py-10 px-6 rounded-lg lg:h-[440px]">
@@ -134,17 +135,19 @@ export default function BlackBanner() {
                 <div className="flex flex-col gap-6">
                   <div className="w-full max-md:flex max-md:flex-col max-md:gap-3 relative text-center">
                     <h3 className="text-4xl lg:text-5xl font-bold text-black leading-tight">
-                      Get to know the team at Nomad Group.
+                      Get to know the team at Leader for india organistion
                     </h3>
                   </div>
                   <div className="flex flex-col items-center gap-6 lg:gap-9">
                     <div className="text-black text-lg leading-relaxed">
                       <p>
                         <span className="font-normal">
-                          We're a tight-knit team of real estate agents in New
-                          York City who get the evolving needs of modern
-                          companies. We're on a mission to make leasing smarter,
-                          friendlier and less stressful.
+                          A powerhouse of investors, founders, and CXOs — united
+                          to back you with capital, expertise, and connections.
+                          From strategy to hiring to market access, we stand
+                          beside every founder we back. For investors, we bring
+                          curated diligence, operator insights, and trusted
+                          co-investors into every deal.
                         </span>
                       </p>
                     </div>

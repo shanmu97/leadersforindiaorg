@@ -92,9 +92,8 @@ const AtlasSection1 = ({ children }) => {
     <div className="w-full bg-black text-white relative pt-16">
       <div className="w-full absolute z-10 flex items-center justify-center ">
         <h1 className="px-10  max-w-7xl text-2xl lg:text-4xl font-[350] text-white text-start lg:-ml-14">
-          Exceptional entrepreneurs and scientists translate innovation into{" "}
+          <strong>LIO (Leaders for India Organization)</strong> is an exclusive business community connecting HNIs, CXOs, founders, and investors. We provide mentorship, curated investment opportunities, and high-quality networking.
           <br />
-          <span className="text-cyan-400">novel medicines</span>.
         </h1>
       </div>
       <div className="sticky top-0 w-full min-h-[100vh] bg-black text-white flex items-center justify-center">
