@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
 
-const AtlasSection2 = ({ section2Transform }) => {
+const AtlasSection2 = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false, amount: 0.3 });
 
@@ -110,11 +110,14 @@ const AtlasSection2 = ({ section2Transform }) => {
   const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
+        <div className="w-full">
+      {/* Heading at the top */}
+      <h2 className="text-4xl font-semibold text-gray-900 mb-8 px-8 py-4">
+        Our Atlas Approach
+      </h2>
     <div
-      className="absolute inset-0 w-full h-full bg-transparent flex items-end justify-center z-50 overflow-hidden"
-      style={{
-        transform: `translateY(${100 - section2Transform}%)`,
-      }}
+      className=" inset-0 w-full h-full bg-transparent flex items-end justify-center z-50 overflow-hidden"
+
     >
       <div className="flex w-full h-[88vh] bg-gray-100">
         <div className=" md:w-80 lg:w-[36%] bg-gradient-to-b from-cyan-800 to-cyan-900 flex flex-col">
@@ -177,6 +180,7 @@ const AtlasSection2 = ({ section2Transform }) => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };

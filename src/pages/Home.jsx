@@ -8,6 +8,8 @@ import LuxHero from "../components/other/LuxHero";
 import Conviction from "../components/other/Conviction";
 import OverlaySection from "../components/other/OverlaySection";
 import ExpertiseBuild from "../components/other/ExpertiseBuild";
+import AtlasSection2 from "../components/ui/AtlasSection2";
+import AtlasSection1 from "../components/ui/AtlasSection1";
 
 export function Home() {
   return (
@@ -24,7 +26,8 @@ export function Home() {
         <ExpertiseBuild />
         <LuxHero />
         <Conviction />
-        <OverlaySection />
+        <AtlasSection1/>
+        <AtlasSection2 />
         {/* <FounderTestimonials /> */}
         <InvestmentFAQ />
         <InsightsSection />
