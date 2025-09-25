@@ -40,31 +40,32 @@ const AtlasSection1 = ({ children }) => {
   const slides = [
     {
       subtitle: "~ What guides us",
-      title: "We play the long game with urgency",
-      copy: "Patience, discipline, and vision to bring new transformational medicines to life.",
+      title: "Leaders for India journey to impact",
+      copy: "From vision to impact, LIO connects investors and entrepreneurs for growth.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/Discover-intro1-1024x960.jpg?strip=all&lossy=0&ssl=1",
+        "https://media.licdn.com/dms/image/v2/D5622AQGfbCnf68META/feedshare-shrink_2048_1536/B56ZZxN0v9GoAo-/0/1745656172426?e=1761782400&v=beta&t=0h1eggjtzs-Ec4EOkgsOnu_I85nzOjHu5dWpEfvwWZY",
+    },
+
+    {
+      subtitle: "~ What guides us",
+      title: "Sharpening your Angel investing lens",
+      copy: "True investment clarity comes from experience, patterns, and thoughtful desicions",
+      image:
+        "https://media.licdn.com/dms/image/v2/D5622AQHMxYKt7zQusg/feedshare-shrink_800/B56ZhR1jH5HkAg-/0/1753719657511?e=1761782400&v=beta&t=LywS2Rjlc87F-TQ2hddiZUcH-9YlKqpygEg79fQwfUY",
     },
     {
       subtitle: "~ What guides us",
-      title: "We are relentless truth-seekers",
-      copy: "Our seed-led investment model uncovers the most promising opportunities.",
+      title: "Key lessons every first time angel learns",
+      copy: "Early angel bets tech clarity, conviction and long-term investment wisdom.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/Discover-intro2-1024x960.jpg?strip=all&lossy=0&ssl=1",
+        "https://media.licdn.com/dms/image/v2/D5622AQEC-UlkNKL0uQ/feedshare-shrink_800/B56ZgtMr8PHQAk-/0/1753104966119?e=1761782400&v=beta&t=6eI9avab0gnUf1ydHuViadngFX_zZ_1zWBFQXcBCcKE",
     },
     {
       subtitle: "~ What guides us",
-      title: "We understand the power of community",
-      copy: "We prioritize a collaborative, science-first, patient-centric culture.",
+      title: "The hidden key to startup success",
+      copy: "True startup success begins with founders deeply aligned to their market",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/Discover-intro3-1024x960.jpg?strip=all&lossy=0&ssl=1",
-    },
-    {
-      subtitle: "~ What guides us",
-      title: "We keep people at the center",
-      copy: "Every company, experiment, decision is guided by a singular goal - improving the lives of patients.",
-      image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/Discover-intro4-1024x960.jpg?strip=all&lossy=0&ssl=1",
+        "https://media.licdn.com/dms/image/v2/D5622AQFcnTungplLZQ/feedshare-shrink_2048_1536/B56ZiJF.xRG4Ao-/0/1754646731175?e=1761782400&v=beta&t=szei0Q3axC2ilSLIC0EaK_P00MQWW6Q4hnpnpaK0pWo",
     },
   ];
 
@@ -91,7 +92,8 @@ const AtlasSection1 = ({ children }) => {
     <div className="w-full bg-black text-white relative pt-16">
       <div className="w-full absolute z-10 flex items-center justify-center ">
         <h1 className="px-10  max-w-7xl text-2xl lg:text-4xl font-[350] text-white text-start lg:-ml-14">
-          Exceptional entrepreneurs and scientists translate innovation into <br />
+          Exceptional entrepreneurs and scientists translate innovation into{" "}
+          <br />
           <span className="text-cyan-400">novel medicines</span>.
         </h1>
       </div>
@@ -183,7 +185,6 @@ const AtlasSection1 = ({ children }) => {
                     }}
                   />
                 </div>
-
               </div>
 
               {/* Next Arrow Button */}
