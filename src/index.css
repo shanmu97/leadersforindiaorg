@@ -1,0 +1,68 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Leaflet Map Styles */
+.leaflet-container {
+  font-family: inherit;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.leaflet-popup-content {
+  margin: 0;
+  padding: 0;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  background: white;
+  border-radius: 12px;
+}
+
+.custom-popup .leaflet-popup-tip {
+  background: white;
+}
+
+/* Swiper z-index fixes for AtlasSection overlay */
+.swiper-container {
+  z-index: 1 !important;
+}
+
+.swiper-container .swiper-wrapper {
+  z-index: 1 !important;
+}
+
+.swiper-container .swiper-slide {
+  z-index: 1 !important;
+}
+
+.swiper-container .swiper-pagination {
+  z-index: 1 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  z-index: 1 !important;
+}
+
+.carousel-controls {
+  bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.animate-scroll {
+  animation: scroll 25s linear infinite; /* was 10s */
+}
