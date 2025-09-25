@@ -44,7 +44,7 @@ const LuxHero = () => {
             ref={ref}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
-            className="bg-[#f9f7ef] text-black min-h-screen flex flex-col justify-center items-center px-4 py-8">
+            className="bg-[#f9f7ef] text-black min-h-screen flex flex-col justify-center items-center px-4 mt-10">
             {/* Desktop Layout */}
             <motion.div className="hidden md:block w-full max-w-6xl">
                 <div className="text-center mb-16">

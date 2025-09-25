@@ -99,23 +99,23 @@ function ExpertiseBuild() {
       animate={isInView ? "visible" : "hidden"}
       className="bg-gradient-to-bt from-gray-50 to-white text-black py-12 flex w-full flex-col"
     >
-      <div className="px-10 lg:px-12  w-full flex flex-col">
+      <div className="px-8 lg:px-8 py-4 w-full flex flex-col">
         <motion.h1
           variants={textVariants}
-          className="text-[45px] lg:text-6xl font-semibold"
+          className="text-[50px] lg:text-7xl font-semibold"
         >
           Built on Expertise
         </motion.h1>
         <motion.p
           variants={textVariants}
-          className="mt-6  mb-10 text-lg lg:text-xl leading-relaxed lg:max-w-lg"
+          className="mt-6 text-lg lg:text-xl leading-relaxed lg:max-w-lg"
         >
           Our investment team, with over 20 years of expertise, inspires and
           shapes possibilities with you.
         </motion.p>
       </div>
       <motion.div variants={containerVariants}>
-        <div className="mt-10 flex flex-col md:flex-row gap-[14px] px-5 lg:px-8 w-full">
+        <div className="mt-0.5 flex flex-col md:flex-row gap-[14px] px-5 lg:px-8 w-full">
           {EBData.map((data, index) => (
             <motion.div
               key={index}
@@ -129,7 +129,7 @@ function ExpertiseBuild() {
               <img
                 src={data.imageSrc}
                 alt={data.title}
-                className="w-full h-48 md:h-64 object-cover"
+                className="w-full h-64 md:h-96 object-cover"
               />
               <div className="p-2 flex flex-col flex-grow absolute bottom-0 bg-gradient-to-t from-black to-transparent w-full pt-5">
                 <h4 className="text-smlg:text-lg font-medium mb-2 text-white">
