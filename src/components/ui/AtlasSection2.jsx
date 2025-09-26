@@ -45,45 +45,45 @@ const AtlasSection2 = () => {
       id: "science",
       title: "Science First",
       heading:
-        "We leverage the entire Atlas ecosystem to build platform and product companies",
-      highlightWord: "ecosystem",
+        "To Power various High Growth Startups Exponentially by Synergizing the Network and Leveraging Resources for Mutual Benefits.",
+      highlightWord: "Exponentially",
       description:
-        "Our science-first approach drives innovation across the entire ecosystem, enabling breakthrough discoveries and transformative solutions.",
+        "To Power various High Growth Startups Exponentially by Synergizing the Network and Leveraging Resources for Mutual Benefits.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/approach-science.jpg?strip=all&lossy=0&w=1371&ssl=1",
+        "https://assets.zyrosite.com/AVLp50azvjuGW6LP/449694842_1012221503818754_29286937262472881_n-mv02J7KaMacgXEK8.jpg",
     },
     {
       id: "discover",
       title: "Discover",
       heading:
-        "We work shoulder-to-shoulder with Entrepreneurs-In-Residence (EIRs) to identify transformative innovation from around the world",
-      highlightWord: "transformative",
+        "To Bridge the Gap between Business Owners, Entrepreneurs and Angel Investors pan-India by untapping the financial and technical resources.",
+      highlightWord: "pan-India",
       description:
         "We discover new possibilities through rigorous scientific methodology and collaborative research initiatives.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/approach-discover.jpg?strip=all&lossy=0&w=1371&ssl=1p",
+        "https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=768,h=388,fit=crop/AVLp50azvjuGW6LP/image-1645-dJo5WbLVxMF7enzj.png",
     },
     {
       id: "shape",
       title: "Shape",
       heading:
-        "We leverage the entire Atlas ecosystem to build platform and product companies",
-      highlightWord: "platform",
+        "Cross leverage businesses and invest smartly for high returns by joining our Members Only Exclusive Community! A place where leading Investors combine forces",
+      highlightWord: "Community",
       description:
         "We shape ideas into reality, transforming concepts into scalable solutions that drive meaningful change.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/10/approach-shape.jpg?strip=all&lossy=0&w=1371&ssl=1",
+        "https://i.ytimg.com/vi/L4dNWNaYtmg/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDIfOj8QWkn1vV_ha0OD-W9I9MWqA",
     },
     {
       id: "build",
       title: "Build",
       heading:
-        "From innovation to commercialization, we are long-term partners, providing guidance, resources, and capital at every stage",
-      highlightWord: "partners",
+        "We connect members to vetted startup deals and curated ventures. Our diligence frames around the 5M principle: Manpower, Methodology, Market, Mentoring, and Money.",
+      highlightWord: "5M principle",
       description:
         "We build robust platforms and products that stand the test of time, focusing on sustainability and scalability.",
       image:
-        "https://ecskrgnm8g8.exactdn.com/wp-content/uploads/2023/11/Untitled-design.jpg?strip=all&lossy=0&w=1371&ssl=1",
+        "https://media.licdn.com/dms/image/v2/D5622AQG-0RBsaiC18w/feedshare-shrink_800/feedshare-shrink_800/0/1702898546039?e=2147483647&v=beta&t=8UPsig6hk-vmrFOenIzryRwjrzLMU1Gf13zr0zDKR0A",
     },
   ];
 

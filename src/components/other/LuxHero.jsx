@@ -153,7 +153,7 @@ const LuxHero = () => {
 
                     {/* CTA Button */}
                     <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 text-lg flex items-center mx-auto transition-colors">
-                        SHOW ME WHAT LUX STANDS FOR
+                        SHOW ME WHAT LIO STANDS FOR
                         <svg className="ml-3 w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
@@ -215,7 +215,7 @@ const LuxHero = () => {
 
                     {/* CTA Button */}
                     <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 text-base flex items-center mx-auto transition-colors">
-                        SHOW ME WHAT LUX STANDS FOR
+                        SHOW ME WHAT LIO STANDS FOR
                         <svg className="ml-2 w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                             <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
                         </svg>
